@@ -1,0 +1,9 @@
+<?php
+    include('../html/header_login.html');
+?>
+<?php
+    include('../html/signup.html');
+?>
+<?php
+    include('../html/footer.html');
+?>
