@@ -10,6 +10,7 @@ include('../html/contacto.html');
     $asunto = 'text'; 
     if (!$_POST){
 ?>
+
 <?php
     }else{
 	 
