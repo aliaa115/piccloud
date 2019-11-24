@@ -1,6 +1,6 @@
 <?php
     $remitente = $_POST['email'];
-    $destinatario = 'Piccloud.site@gmail.com';
+    $destinatario = 'piccloud.site@gmail.com';
     $asunto = 'text'; 
     if (!$_POST){
 ?>
