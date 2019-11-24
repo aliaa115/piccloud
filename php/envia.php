@@ -2,9 +2,6 @@
 include('../html/header_inicio.html');
 ?>
 <?php
-include('../html/contacto.html');
-?>
-<?php
     $remitente = $_POST['email'];
     $destinatario = 'piccloud.site@gmail.com';
     $asunto = 'text'; 
@@ -29,6 +26,9 @@ include('../html/contacto.html');
 
     mail($destinatario, $asunto, $cuerpo, $headers);
 }
+?>
+<?php
+include('../html/contacto.html');
 ?>
 <?php
 include('../html/footer.html');
