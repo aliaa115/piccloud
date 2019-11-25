@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="../css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="../css/signin.css" rel="stylesheet">
 <link rel="stylesheet" href="../css/estilos.css">
 <link rel="stylesheet" href="../css/estiloLogIn.css">
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tempusdominus-bootstrap-4/5.0.0-alpha14/js/tempusdominus-bootstrap-4.min.js"></script>
@@ -10,24 +11,27 @@
     <br>
     <h1 class="text-light m-4 font-weight-bold display-1 bg-success text-center">CREAR CUENTA</h1>
     <br><br>
-    <form class="text-center form-signin container" method="POST" action="/signedup">
+    <form class="text-center form-signin container" method="POST" action="#">
         <h4>Nombre de Usuario:</h4>
-        <input type="text" name="nombre" id="nombre" class="texto text-center form-control" placeholder="Usuario" required="true"
+        <input type="text" id="usuario" class="texto text-center form-control" placeholder="Usuario" required="true"
             autofocus="" style="background-color: lightgreen; color: black;">
         <h4>Email:</h4>
-        <input type="email" name="email" id="email" class="texto text-center form-control" placeholder="E-mail" required="true"
+        <input type="email" id="email" class="texto text-center form-control" placeholder="E-mail" required="true"
             autofocus="" style="background-color: lightgreen; color: black;">
         <h4>Edad:</h4>
-        <input type="age" name="edad" id="edad" class="texto text-center form-control" placeholder="Edad" required="true"
+        <input type="number" id="edad" class="texto text-center form-control" placeholder="Edad" required="true"
             autofocus="" style="background-color: lightgreen; color: black;">
         <h4>Contraseña:</h4>
-        <input type="password" name="password" id="inputPassword" class="texto text-center form-control " placeholder="Contraseña"
+        <input type="password" id="inputPassword" class="texto text-center form-control " placeholder="Contraseña"
+            required="true" style="background-color: lightgreen; color: black;">
+        <h4>Repetir Contraseña:</h4>
+        <input type="password" id="inputPassword" class="texto text-center form-control " placeholder="Contraseña"
             required="true" style="background-color: lightgreen; color: black;">
         <br>
         <div class="checkbox mb-6">
             <label>
                 <input type="checkbox" value="remember-me" required="true"> Aceptro los <a class="link"
-                    href="/signup">terminos de Uso</a> de picCloud
+                    href="../php/signup.php">terminos de Uso</a> de picCloud
             </label>
         </div>
         <br>
