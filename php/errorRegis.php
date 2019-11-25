@@ -1,0 +1,9 @@
+<?php
+include('../html/header_inicio.html');
+?>
+<?php
+include('../html/errorReg.html');
+?>
+<?php
+include('../html/footer.html');
+?>
